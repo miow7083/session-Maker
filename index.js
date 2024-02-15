@@ -12,7 +12,7 @@
 
 
 import fs from 'fs';
-import { MakeSession, restoreSession } from './Model.mjs';
+import { MakeSession, restoreSession } from './Model.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -78,6 +78,3 @@ const RestoreSession = async (sessionID, AuthFolder = 'auth_info_baileys') => {
 
 export { CreateSession, RestoreSession };
 
-
-// For compatibility with CommonJS
-module.exports = { CreateSession, RestoreSession };
