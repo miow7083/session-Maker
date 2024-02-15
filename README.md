@@ -18,13 +18,13 @@ To use this module, follow these steps:
 2. Install dependencies:
 
     ```bash
-    npm install session-management-module
+    npm install @miow26/session
     ```
 
 3. Import the module in your project:
 
     ```javascript
-    import { CreateSession, RestoreSession } from 'session-management-module';
+    import { CreateSession, RestoreSession } from '@miow26/session';
     ```
 
 ## Usage
@@ -52,7 +52,7 @@ await RestoreSession('mySessionID', 'auth_info_folder');
 
 ## File Structure
 
-- `session-management-module.js`: Main module file containing the `CreateSession` and `RestoreSession` functions.
+- `@miow26/session`: Main module file containing the `CreateSession` and `RestoreSession` functions.
 - `Model.js`: Module file containing functions `MakeSession` and `restoreSession`.
 - `README.md`: This file, containing information about the module.
 
