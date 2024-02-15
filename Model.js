@@ -29,8 +29,9 @@ const Session = SessionDB.model('Sessions', SessionSchema);
 export default Session;
 
 const MakeSession = async (SessionID, creds) => {
-    const CheckSession = await Session.findOne({ id: SessionID });
+    const CheckSession = await Session.findOne({ SessionID: SessionID });
     if (CheckSession) {
+      console.log('Session already exists');
         return { success: false, data: 'Session id exists' };
     } else {
       const newId = new mongoose.Types.ObjectId();

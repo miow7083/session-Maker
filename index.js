@@ -70,11 +70,11 @@ const RestoreSession = async (sessionID, AuthFolder = 'auth_info_baileys') => {
   }
 }
 
-/* (async () => {
-  await RestoreSession('hi', 'hi2');
-})();
+/*  (async () => {
+  await CreateSession('hi', 'hi2');
+})(); */
 
-} */
 
-export { CreateSession, RestoreSession };
+
+ export { CreateSession, RestoreSession }; 
 
